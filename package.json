@@ -1,0 +1,17 @@
+{
+  "name": "medsys-actions-demo",
+  "version": "1.0.0",
+  "description": "A sample MedSys appointment module for demonstrating GitHub Actions.",
+  "main": "src/appointment.js",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.js"
+  },
+  "keywords": [
+    "medsys",
+    "github-actions",
+    "ci"
+  ],
+  "author": "Tan Xuan Hong",
+  "license": "MIT"
+}
