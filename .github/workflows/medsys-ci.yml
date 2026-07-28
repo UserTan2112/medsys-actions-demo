@@ -1,0 +1,41 @@
+name: MedSys CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    name: Build and Test MedSys Module
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Display environment information
+        run: |
+          node --version
+          npm --version
+
+      - name: Run automated tests
+        run: npm test
+
+      - name: Build MedSys module
+        run: npm run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: medsys-appointment-build
+          path: build/
