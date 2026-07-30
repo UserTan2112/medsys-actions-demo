@@ -1,7 +1,7 @@
 {
   "name": "medsys-actions-demo",
   "version": "1.0.0",
-  "description": "A sample MedSys appointment module for demonstrating GitHub Actions.",
+  "description": "MedSys GitHub Actions Demonstration",
   "main": "src/appointment.js",
   "scripts": {
     "test": "node --test",
