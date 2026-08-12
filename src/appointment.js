@@ -7,6 +7,7 @@
  */
 
 // Live demo2 update: validate MedSys CI workflow through GitHub Actions
+// Live Demo 3
 function createAppointment(patientName, appointmentDate) {
     if (!patientName || !appointmentDate) {
         throw new Error("Patient name and appointment date are required.");
