@@ -6,7 +6,7 @@
  * @returns {{patientName: string, appointmentDate: string, status: string}}
  */
 
-// Live demo update: validate MedSys CI workflow through GitHub Actions
+// Live demo2 update: validate MedSys CI workflow through GitHub Actions
 function createAppointment(patientName, appointmentDate) {
     if (!patientName || !appointmentDate) {
         throw new Error("Patient name and appointment date are required.");
